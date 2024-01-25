@@ -3,133 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
     <title>Youtube Mobile</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <div class="logo">
-          <i class="fab fa-youtube"></i>
-          <span class="title">Youtube</span>
-        </div>
-        <div class="icons">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-        </div>
+        <i class="fab fa-youtube"></i>
+        <span class="title clamp">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
     </header>
     <!-- Videio Player -->
     <section class="player">
-      <video width="400" controls>
+      <video controls>
         <source src="./test.mov" type="video/mp4" />
       </video>
     </section>
-    <!-- video Information -->
-    <section class="info">
-      <!-- metadata -->
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#HTML</li>
-          <li>#CSS</li>
-          <li>#Javascript</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            excepturi quas numquam quaerat fuga officiis nemo debitis? Modi
-            debitis amet cum dolor nesciunt ex illo? Obcaecati dicta maiores
-            fuga accusamus?
-          </span>
-          <button class="moreBtn">
-            <i class="fa-solid fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views"><span>1M views 1month</span></div>
-      </div>
-      <!-- actions -->
-      <div class="actions">
-        <li>
-          <button><i class="fa-solid fa-thumbs-up"></i></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-thumbs-down"></i></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-share"></i></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-plus"></i></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-font-awesome"></i></button>
-        </li>
-      </div>
-      <!-- channel description -->
-      <div class="channel">
+
+    <div class="infoAndUpNext">
+      <!-- video Information -->
+      <section class="info">
+        <!-- metadata -->
         <div class="metadata">
-          <img src="./image/griffon.png" alt="griffon image" />
-          <div class="info">
-            <span class="name">Coding Mommy</span
-            ><span class="subscribers">10M subscribers</span>
+          <ul class="hashtags">
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#Javascript</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              excepturi quas numquam quaerat fuga officiis nemo debitis? Modi
+              debitis amet cum dolor nesciunt ex illo? Obcaecati dicta maiores
+              fuga accusamus?
+            </span>
+            <button class="moreBtn">
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
           </div>
+          <span class="views">1M views 1month</span>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
-    <section class="UpNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <img src="./image/1.png" alt="" />
-          <div class="info">
-            <span class="title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              asperiores est, nemo pariatur omnis porro harum perspiciatis,
-              cupiditate rem quibusdam ex ab perferendis, eius corrupti
-              praesentium voluptates officiis nesciunt suscipit?</span
-            ><span class="name"></span>Coding Mommy<span class="views"
-              >82K views</span
-            >
+        <!-- actions -->
+        <ul class="actions">
+          <li>
+            <button><i class="fa-solid fa-thumbs-up active"></i>60</button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-share"></i>공유</button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-plus"></i></button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-font-awesome"></i></button>
+          </li>
+        </ul>
+        <!-- channel description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./image/griffon.png" alt="griffon image" />
+            <div class="info">
+              <span class="name">Coding Mommy</span>
+              <span class="subscribers">10M subscribers</span>
+            </div>
           </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="./image/2.png" alt="" />
-          <div class="info">
-            <span class="title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              asperiores est, nemo pariatur omnis porro harum perspiciatis,
-              cupiditate rem quibusdam ex ab perferendis, eius corrupti
-              praesentium voluptates officiis nesciunt suscipit?</span
-            ><span class="name"></span>Coding Mommy<span class="views"
-              >82K views</span
-            >
-          </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="./image/3.png" alt="" />
-          <div class="info">
-            <span class="title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              asperiores est, nemo pariatur omnis porro harum perspiciatis,
-              cupiditate rem quibusdam ex ab perferendis, eius corrupti
-              praesentium voluptates officiis nesciunt suscipit?</span
-            ><span class="name"></span>Coding Mommy<span class="views"
-              >82K views</span
-            >
-          </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-      </ul>
-    </section>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="./image/1.png" alt="" /></div>
+
+            <div class="info">
+              <span class="title"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                asperiores est, nem</span
+              ><span class="name"></span>Coding Mommy<span class="views"
+                >82K views</span
+              >
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/2.png" alt="" /></div>
+
+            <div class="info">
+              <span class="title"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                asperiores est,</span
+              ><span class="name"></span>Coding Mommy<span class="views"
+                >82K views</span
+              >
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/3.png" alt="" /></div>
+
+            <div class="info">
+              <span class="title"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                asperiores es</span
+              ><span class="name"></span>Coding Mommy<span class="views"
+                >82K views</span
+              >
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
     <script
       src="https://kit.fontawesome.com/e5c879d236.js"
       crossorigin="anonymous"
