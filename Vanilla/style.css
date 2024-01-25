@@ -156,6 +156,7 @@ body > .info {
 .info .channel .metadata img {
   width: var(--avatar-size);
   height: var(--avatar-size);
+  margin-right: calc(var(--padding) / 2);
 }
 
 .info .channel .metadata .info .subscribers {
