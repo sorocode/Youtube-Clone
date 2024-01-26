@@ -6,6 +6,8 @@ export default function Player() {
       <ReactPlayer
         url={"https://www.youtube.com/watch?v=7sDY4m8KNLc"}
         width="100%"
+        playing="true"
+        controls="true"
       />
     </div>
   );
