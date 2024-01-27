@@ -57,14 +57,30 @@ function Icons() {
   );
 }
 function Title() {
+  let clamped = true;
+  let btnClass = "text-3xl";
+  let titleClass = "titleTxt text-xl mx-2 line-clamp-2";
+
+  function handleClamp() {
+    btnClass += " rotate-180";
+  }
+
   return (
     <div>
-      <span className="text-xl mx-2">
-        Cozy Daily Life With Pug | plog | daily{" "}
-      </span>
-      <button className="text-3xl">
-        <FaCaretDown />
-      </button>
+      <div className="flex">
+        <span className={titleClass}>
+          Cozy Daily Life With Pug | plog | daily Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Neque, architecto id ducimus,
+          laudantium, tempora officiis ratione nihil ut vel pariatur quam
+          nesciunt minus. Similique voluptates exercitationem cum explicabo, a
+          minus?{" "}
+        </span>
+        <div>
+          <button className={btnClass} onClick={handleClamp}>
+            <FaCaretDown />
+          </button>
+        </div>
+      </div>
       <p className="mx-3 my-2">조회수 100만회 3개월 전</p>
       <Icons />
       <hr className="my-3" />

@@ -13,7 +13,7 @@ export default function Profile() {
         </div>
         <div className="subscribeBtn border-red mr-3">
           <button className="text-red hover:bg-rose-100 text-lg rounded-lg p-2">
-            subscrive
+            구독
           </button>
         </div>
       </div>
