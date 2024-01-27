@@ -59,7 +59,7 @@ function Icons() {
 function Title() {
   return (
     <div>
-      <span className="text-2xl mx-2">
+      <span className="text-xl mx-2">
         Cozy Daily Life With Pug | plog | daily{" "}
       </span>
       <button className="text-3xl">

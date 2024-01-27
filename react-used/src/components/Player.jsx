@@ -6,7 +6,7 @@ export default function Player() {
       <ReactPlayer
         url={"https://youtu.be/yomSywNstWI?si=qi9t9yq5D2WvHM-V"}
         width="100%"
-        // height="100%"
+        height="180px"
         // playing="true"
         controls="true"
       />
