@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaCaretDown,
   FaFlag,
@@ -57,12 +58,22 @@ function Icons() {
   );
 }
 function Title() {
-  let clamped = true;
-  let btnClass = "text-3xl";
-  let titleClass = "titleTxt text-xl mx-2 line-clamp-2";
+  const [btnClass, setBtnClass] = useState("text-3xl");
+  const [titleClass, setTitleClass] = useState(
+    "titleTxt text-xl mx-2 line-clamp-2"
+  );
 
   function handleClamp() {
-    btnClass += " rotate-180";
+    setBtnClass((prevClass) =>
+      prevClass.includes("rotate-180")
+        ? "text-3xl transition duration-500 ease-in-out"
+        : "text-3xl transition duration-500 rotate-180"
+    );
+    setTitleClass((prevClass) =>
+      prevClass.includes("line-clamp-2")
+        ? "titleTxt text-xl mx-2"
+        : "titleTxt text-xl mx-2 line-clamp-2"
+    );
   }
 
   return (
