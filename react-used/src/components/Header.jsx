@@ -8,7 +8,7 @@ export default function Header() {
         <button className="mr-1">
           <FaYoutube />
         </button>
-        <label className="headerMark text-white font-roboto font-bold ">
+        <label className="headerMark text-white font-roboto font-extrabold ">
           Youtube
         </label>
       </div>
