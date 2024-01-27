@@ -26,13 +26,13 @@ function Icons() {
           <button className="text-blue">
             <FaThumbsUp />
           </button>
-          <p className="text-base">80</p>
+          <p className="text-base">8만</p>
         </div>
         <div>
           <button>
             <FaThumbsDown />
           </button>
-          <p className="text-base">3</p>
+          <p className="text-base">0</p>
         </div>
         <div>
           <button>
