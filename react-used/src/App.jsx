@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Info from "./components/Info";
 import Player from "./components/Player";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Player />
+      <Info />
     </>
   );
 }
