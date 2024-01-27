@@ -20,35 +20,51 @@ function HashTags() {
   );
 }
 function Icons() {
+  const [good, setGood] = useState(0);
+  const [goodClass, setGoodClass] = useState(
+    "transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+  );
+  const [bad, setbad] = useState(0);
+  const [badClass, setbadClass] = useState(
+    "transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+  );
+
+  function handleGood() {
+    setGood(good + 1);
+    setGoodClass("text-blue");
+  }
+  function handleBad() {
+    setbad(bad + 1);
+  }
   return (
     <div className="max-w-[500px] mt-5">
       <div className="flex justify-around items-center text-xl">
         <div>
-          <button className="text-blue">
+          <button className={goodClass} onClick={handleGood}>
             <FaThumbsUp />
           </button>
-          <p className="text-base">8만</p>
+          <p className="text-base">{good}</p>
         </div>
         <div>
-          <button>
+          <button className={badClass} onClick={handleBad}>
             <FaThumbsDown />
           </button>
-          <p className="text-base">0</p>
+          <p className="text-base">{bad}</p>
         </div>
         <div>
-          <button>
+          <button className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">
             <FaShare />
           </button>
           <p className="text-sm">공유</p>
         </div>
         <div>
-          <button>
+          <button className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">
             <FaPlus />
           </button>
           <p className="text-sm">추가</p>
         </div>
         <div>
-          <button>
+          <button className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">
             <FaFlag />
           </button>
           <p className="text-sm">신고</p>
