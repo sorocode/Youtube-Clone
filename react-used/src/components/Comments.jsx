@@ -7,7 +7,7 @@ function Comments() {
   function handleSubmit(event) {
     event.preventDefault();
     const newComment = event.target.comment.value;
-    setComments([...comments, newComment]);
+    setComments([newComment, ...comments]);
     console.log(comments);
     event.target.comment.value = "";
   }
