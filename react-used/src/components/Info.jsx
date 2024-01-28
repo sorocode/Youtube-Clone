@@ -37,7 +37,7 @@ function Icons() {
     setbad(bad + 1);
   }
   return (
-    <div className="max-w-[500px] mt-5">
+    <div className="max-w-[768px] mt-5">
       <div className="flex justify-around items-center text-xl">
         <div>
           <button className={goodClass} onClick={handleGood}>
