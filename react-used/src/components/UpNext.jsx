@@ -14,10 +14,10 @@ function UpNext() {
         <ul>
           {images.map((item) => (
             <li key={item} className="flex mb-2">
-              <img src={item} className="h-[150px] min-w-72 rounded-lg ml-2" />
+              <img src={item} className="h-[100px] min-w-44 rounded-lg ml-2" />
               <div className="info flex">
                 <div className="metadata ml-2">
-                  <p className="text-lg">
+                  <p className="text-lg line-clamp-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Ipsam
                   </p>
