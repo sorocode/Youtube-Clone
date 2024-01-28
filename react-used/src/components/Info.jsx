@@ -22,7 +22,7 @@ function HashTags() {
 function Icons() {
   const [good, setGood] = useState(0);
   const [goodClass, setGoodClass] = useState(
-    "transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+    ""transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
   );
   const [bad, setbad] = useState(0);
   const [badClass, setbadClass] = useState(
