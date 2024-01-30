@@ -3,7 +3,7 @@ import doberman from "../assets/doberman.png";
 import React, { useState } from "react";
 
 function Comments() {
-  const [comments, setComments] = useState(["So cute pug💕", "I want you❤️"]);
+  const [comments, setComments] = useState(["So cut"]);
   function handleSubmit(event) {
     event.preventDefault();
     const newComment = event.target.comment.value;
